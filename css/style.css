@@ -136,3 +136,7 @@ a:focus-visible, .btn:focus-visible, .navbar-toggler:focus-visible {
 /* Pagini în lucru */
 .pagina-simpla { padding: 3rem 0; min-height: 50vh; }
 .pagina-simpla h1 { font-size: 1.8rem; margin-bottom: 0.75rem; }
+.site-header .navbar {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}

@@ -1,0 +1,138 @@
+/* ShareIT – stiluri principale
+   Culori: verde #2E7D5B, albastru #1F3A5F, accent #F2A541, fundal #F3F7F4, text #22302B
+   Fonturi: Sora (titluri), Nunito Sans (text) */
+
+:root {
+  --verde: #2E7D5B;
+  --verde-inchis: #25664A;
+  --albastru: #1F3A5F;
+  --accent: #F2A541;
+  --fundal: #F3F7F4;
+  --text: #22302B;
+  --alb: #FFFFFF;
+  --linie: #DCE5DF;
+}
+
+body {
+  font-family: "Nunito Sans", system-ui, sans-serif;
+  color: var(--text);
+  background: var(--fundal);
+  line-height: 1.6;
+}
+
+h1, h2, h3, .brand {
+  font-family: "Sora", system-ui, sans-serif;
+  color: var(--albastru);
+  line-height: 1.2;
+}
+
+a { color: var(--verde); }
+a:focus-visible, .btn:focus-visible, .navbar-toggler:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Header și meniu */
+.site-header { background: var(--albastru); }
+.brand { color: var(--alb); font-size: 1.5rem; font-weight: 700; }
+.brand:hover { color: var(--alb); }
+.site-header .nav-link { color: #D5DEEA; border-bottom: 3px solid transparent; }
+.site-header .nav-link:hover { color: var(--alb); }
+.site-header .nav-link.active { color: var(--alb); border-bottom-color: var(--accent); }
+
+/* Butoane */
+.btn-share {
+  background: var(--verde);
+  border: 2px solid var(--verde);
+  color: var(--alb);
+  font-weight: 600;
+}
+.btn-share:hover { background: var(--verde-inchis); border-color: var(--verde-inchis); color: var(--alb); }
+.btn-outline-share {
+  background: transparent;
+  border: 2px solid var(--albastru);
+  color: var(--albastru);
+  font-weight: 600;
+}
+.btn-outline-share:hover { background: var(--albastru); color: var(--alb); }
+
+/* Hero */
+.hero { padding: 3rem 0 2.5rem; }
+.hero h1 { font-size: clamp(1.9rem, 4.5vw, 3rem); font-weight: 700; margin-bottom: 1rem; }
+.hero .lead { max-width: 52ch; margin-bottom: 1.5rem; }
+
+.feed {
+  background: var(--alb);
+  border: 1px solid var(--linie);
+  border-left: 6px solid var(--accent);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+.feed-titlu { font-size: 1.05rem; margin-bottom: 1rem; }
+.feed-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.85rem; }
+.feed-lista li { display: flex; align-items: center; gap: 0.85rem; }
+.feed-lista small { display: block; color: #5B6B64; }
+.feed-ico {
+  flex: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  background: var(--fundal);
+  border-radius: 10px;
+}
+
+/* Secțiuni */
+.sectiune { padding: 1.5rem 0 2rem; }
+.sectiune h2 { font-size: 1.4rem; margin-bottom: 1rem; }
+
+.categorie {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--alb);
+  border: 1px solid var(--linie);
+  border-radius: 10px;
+  color: var(--albastru);
+  font-weight: 600;
+  text-decoration: none;
+}
+.categorie:hover { border-color: var(--verde); }
+.categorie-ico { font-size: 1.5rem; }
+
+/* Carduri obiecte */
+.obiect {
+  height: 100%;
+  background: var(--alb);
+  border: 1px solid var(--linie);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.obiect-poza {
+  height: 150px;
+  display: grid;
+  place-items: center;
+  font-size: 3.5rem;
+}
+.poza-1 { background: #DDEBE3; }
+.poza-2 { background: #FBE9CC; }
+.poza-3 { background: #D9E2EE; }
+.obiect-corp { padding: 1rem; }
+.obiect-corp h3 { font-size: 1.05rem; margin-bottom: 0.25rem; }
+.obiect-meta { color: #5B6B64; font-size: 0.9rem; margin-bottom: 0.85rem; }
+
+/* Subsol */
+.site-footer {
+  margin-top: 2rem;
+  padding: 1.25rem 0;
+  background: var(--albastru);
+  color: #D5DEEA;
+  font-size: 0.9rem;
+}
+.site-footer a { color: var(--alb); }
+
+/* Pagini în lucru */
+.pagina-simpla { padding: 3rem 0; min-height: 50vh; }
+.pagina-simpla h1 { font-size: 1.8rem; margin-bottom: 0.75rem; }
